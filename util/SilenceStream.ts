@@ -25,11 +25,9 @@ export default class SilenceStream {
             }
         })
     }
-    
     public get stream() : Readable {
         return this._stream
     }
-
     public end() {
         this._chunk = null
     }
